@@ -1,0 +1,139 @@
+/* THIRD SECTION */
+
+.main-third-section {
+  width: 100%;
+  background-color: #ffffff;
+  color: #17171b;
+}
+
+
+/* CONTAINER */
+
+.third-container-third-section {
+  width: 100%;
+  max-width: 1600px;
+  min-height: 800px;
+  margin: 0 auto;
+  padding: 80px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  box-sizing: border-box;
+}
+
+
+/* SECOND SECTION REVERSE */
+
+.reverse-third-section {
+  flex-direction: row-reverse;
+}
+
+
+/*  TEXT */
+
+.third-content-third-section {
+  width: 48%;
+}
+
+
+.third-label-third-section {
+  margin-bottom: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #77737d;
+  text-transform: uppercase;
+}
+
+
+.third-title-third-section {
+  margin: 0;
+  font-size: 58px;
+  line-height: 1.02;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+
+.third-title-third-section span {
+  color: #76558f;
+  font-style: italic;
+}
+
+
+/* DESCRIPTION */
+
+.third-description-third-section {
+  max-width: 650px;
+  margin-top: 35px;
+  margin-bottom: 28px;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #595861;
+}
+
+
+/* LIST */
+
+.third-list-third-section {
+  padding-left: 20px;
+  margin: 0;
+  color: #595861;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+.third-list-third-section li {
+  margin-bottom: 12px;
+}
+
+
+.third-list-third-section li::marker {
+  color: #76558f;
+}
+
+
+/* BUTTON */
+
+.third-button-third-section {
+  margin-top: 25px;
+  padding: 14px 20px;
+  background-color: white;
+  border: 1px solid #d8d8d8;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.third-button-third-section span {
+  margin-left: 8px;
+}
+
+
+.third-button-third-section:hover {
+  border-color: #76558f;
+  transform: translateY(-2px);
+}
+
+
+/* IMAGE */
+
+.third-image-container-third-section {
+  width: 52%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.third-image-third-section {
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+

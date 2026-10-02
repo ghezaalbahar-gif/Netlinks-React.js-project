@@ -1,0 +1,258 @@
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.industries {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 190vh;
+  /* makes the absolutely-positioned label stay inside THIS section */
+  position: relative;
+}
+
+.industries-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.industries-header,
+.industries-list {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+/* Label */
+
+.industries-label {
+  position: absolute;
+  top: 0;
+  left: 96px;
+
+  margin: 0;
+  padding: 0;
+
+  color: #68666e;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* Header */
+
+.industries-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 38px 0 96px;
+}
+
+.industries-header h1 {
+  margin: 0;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -3px;
+}
+
+.industries-header h1 span {
+  color: #76548d;
+  font-style: italic;
+}
+
+.industries-header p {
+  margin: 14px 0 0;
+  color: #57555e;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.52;
+}
+
+/* List */
+
+.industries-list {
+  border-top: 1px solid #d9d9d9;
+}
+
+.industry-row {
+  display: grid;
+  grid-template-columns: 120px 420px 1fr 60px;
+  align-items: center;
+  min-height: 150px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+/* =========================
+   INDUSTRY HOVER
+========================= */
+
+.industry-row {
+  transition:
+    background-color 0.35s ease,
+    padding-left 0.35s ease,
+    padding-right 0.35s ease;
+}
+
+.industry-title,
+.industry-description,
+.industry-number,
+.industry-arrow {
+  transition:
+    color 0.35s ease,
+    transform 0.35s ease;
+}
+
+.industry-row:hover {
+  background-color: #faf8fc;
+}
+
+.industry-row:hover .industry-number {
+  color: #76548d;
+}
+
+.industry-row:hover .industry-title {
+  transform: translateX(8px);
+}
+
+.industry-row:hover .industry-description {
+  transform: translateX(5px);
+}
+
+.industry-row:hover .industry-arrow {
+  color: #76548d;
+  transform: translate(6px, -6px);
+}
+
+/* Number */
+
+.industry-number {
+  color: #74727a;
+  font-size: 18px;
+}
+
+/* Title */
+
+.industry-title {
+  margin: 0;
+  max-width: 380px;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -1.5px;
+  text-align: justify;
+}
+
+/* Description */
+
+.industry-description {
+  margin: 0;
+  max-width: 700px;
+  color: #57555e;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  letter-spacing: -0.5px;
+}
+
+/* Arrow */
+
+.industry-arrow {
+  justify-self: end;
+  color: #b5b5b7;
+  font-size: 31px;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  .industries-container {
+    padding: 0 40px;
+  }
+
+  .industries-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-bottom: 60px;
+  }
+
+  .industries-header h1 {
+    font-size: 56px;
+  }
+
+  .industries-header p {
+    font-size: 21px;
+  }
+
+  .industry-row {
+    grid-template-columns: 70px 280px 1fr 40px;
+  }
+
+  .industry-title {
+    font-size: 34px;
+  }
+
+  .industry-description {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .industries-container {
+    padding: 0 20px;
+  }
+
+  .industries-header {
+    padding: 30px 0 50px;
+  }
+
+  .industries-header h1 {
+    font-size: 45px;
+    letter-spacing: -2px;
+  }
+
+  .industries-header p {
+    font-size: 18px;
+  }
+
+  .industries-header p br {
+    display: none;
+  }
+
+  .industry-row {
+    grid-template-columns: 40px 1fr 30px;
+    grid-template-areas:
+      "number title arrow"
+      ". description description";
+    gap: 15px;
+    padding: 28px 0;
+  }
+
+  .industry-number {
+    grid-area: number;
+    font-size: 14px;
+  }
+
+  .industry-title {
+    grid-area: title;
+    max-width: 100%;
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .industry-description {
+    grid-area: description;
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  
+}

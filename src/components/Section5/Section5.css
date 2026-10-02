@@ -1,0 +1,33 @@
+.section5 {
+  padding: 2rem;
+  margin-top: 3rem;
+  align-items: center;
+  min-width: 100vh;
+  height: 510px;
+  background-color: #efeaf3;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+.section5 .semicolon {
+  font-weight: 700;
+  font-size: 130px;
+  color: #b4a6c2;
+}
+.section5-h2 {
+  margin-top: 0;
+  font-size: 45px;
+  font-weight: 400;
+  color: #111014;
+  margin-bottom: 0;
+}
+.section5-h2 em {
+  color: #6d5486;
+}
+.section5-p {
+  color: #6b6a73;
+  font-size: 13px;
+  font-weight: 300;
+}
