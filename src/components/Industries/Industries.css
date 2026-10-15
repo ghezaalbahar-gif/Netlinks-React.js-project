@@ -205,6 +205,22 @@ body,
 /* Mobile */
 
 @media (max-width: 650px) {
+  /* 190vh is shorter than the stacked rows on a phone, so the list painted
+     over the sections below it */
+  .industries {
+    height: auto;
+  }
+
+  .industries-label {
+    left: 20px;
+  }
+
+  .industries-header,
+  .industries-list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .industries-container {
     padding: 0 20px;
   }
